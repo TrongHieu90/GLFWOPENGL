@@ -22,4 +22,13 @@
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="shaders\frag.txt" />
+    <Text Include="shaders\vertex.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Dependencies\GLFW\include\Shader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
 </Project>
