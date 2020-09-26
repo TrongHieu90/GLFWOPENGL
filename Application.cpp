@@ -47,7 +47,7 @@ int main()
 
 	// build and compile our shader program
 	// ------------------------------------
-	Shader ourShader("./shaders/vertex.txt", "./shaders/fragment.txt");
+	Shader ourShader("./shaders/vertex.txt", "./shaders/frag.txt");
 
 	// set up vertex data (and buffer(s)) and configure vertex attributes
 	// ------------------------------------------------------------------
