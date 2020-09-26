@@ -153,6 +153,7 @@
   <ItemGroup>
     <ClCompile Include="Application.cpp" />
     <ClCompile Include="src\glad.c" />
+    <ClCompile Include="src\StbImageImpl.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="shaders\frag.txt" />
@@ -160,6 +161,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Dependencies\GLFW\include\Shader.h" />
+    <ClInclude Include="Dependencies\GLFW\include\stb_image.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="resources\container.jpg" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
