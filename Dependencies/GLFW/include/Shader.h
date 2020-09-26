@@ -8,6 +8,8 @@
 #include <fstream>
 #include <sstream>
 #include <iostream>
+#include <filesystem>
+
 
 class Shader
 {
@@ -17,6 +19,10 @@ public:
 	// ------------------------------------------------------------------------
 	Shader(const char* vertexPath, const char* fragmentPath)
 	{
+		//check if our file exists
+		checkFileExist(vertexPath);
+		checkFileExist(fragmentPath);
+
 		// 1. retrieve the vertex/fragment source code from filePath
 		std::string vertexCode;
 		std::string fragmentCode;
@@ -94,6 +100,17 @@ public:
 	}
 
 private:
+	//utility function to check if file exists in path (C++ 17 feature)
+	//----------------------------------------------------------------------
+	bool checkFileExist(const char* path)
+	{
+		bool exist = std::filesystem::exists(path);
+		if (!exist)
+			std::cout << "file does not exist at: " << path << "\n -- --------------------------------------------------- -- " << std::endl;
+		return exist;
+	}
+
+
 	// utility function for checking shader compilation/linking errors.
 	// ------------------------------------------------------------------------
 	void checkCompileErrors(unsigned int shader, std::string type)
