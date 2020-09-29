@@ -162,6 +162,7 @@
     <Text Include="shaders\vertex.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Dependencies\GLFW\include\Camera.h" />
     <ClInclude Include="Dependencies\GLFW\include\Shader.h" />
     <ClInclude Include="Dependencies\GLFW\include\stb_image.h" />
   </ItemGroup>
