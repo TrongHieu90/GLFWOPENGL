@@ -77,7 +77,7 @@ int main()
 	// build and compile our shader program
 	// ------------------------------------
 	Shader lightingShader("./shaders/vertex.glsl", "./shaders/frag.glsl");
-	Shader lightCubeShader("./shaders/light_cube.vertex.glsl", "./shaders/light_cube.frag.glsl");
+	Shader lightCubeShader("./shaders/lightCube.vertex.glsl", "./shaders/lightCube.frag.glsl");
 
 	// set up vertex data (and buffer(s)) and configure vertex attributes
 	// ------------------------------------------------------------------
