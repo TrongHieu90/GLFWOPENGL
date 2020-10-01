@@ -158,8 +158,8 @@
     <ClCompile Include="src\StbImageImpl.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="shaders\frag.txt" />
-    <Text Include="shaders\vertex.txt" />
+    <Text Include="shaders\frag.glsl" />
+    <Text Include="shaders\vertex.glsl" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Dependencies\GLFW\include\Camera.h" />
@@ -169,6 +169,12 @@
   <ItemGroup>
     <Image Include="resources\awesomeface.png" />
     <Image Include="resources\container.jpg" />
+    <Image Include="resources\container2.png" />
+    <Image Include="resources\container2_specular.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="shaders\light_cube.frag.glsl" />
+    <FxCompile Include="shaders\light_cube.vertex.glsl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

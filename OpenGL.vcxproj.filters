@@ -26,8 +26,8 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="shaders\frag.txt" />
-    <Text Include="shaders\vertex.txt" />
+    <Text Include="shaders\frag.glsl" />
+    <Text Include="shaders\vertex.glsl" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Dependencies\GLFW\include\Shader.h">
@@ -47,5 +47,15 @@
     <Image Include="resources\awesomeface.png">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="resources\container2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\container2_specular.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="shaders\light_cube.vertex.glsl" />
+    <FxCompile Include="shaders\light_cube.frag.glsl" />
   </ItemGroup>
 </Project>
