@@ -159,8 +159,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Dependencies\GLFW\include\Camera.h" />
+    <ClInclude Include="Dependencies\GLFW\include\mesh.h" />
     <ClInclude Include="Dependencies\GLFW\include\Shader.h" />
     <ClInclude Include="Dependencies\GLFW\include\stb_image.h" />
+    <ClInclude Include="src\Model.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="resources\awesomeface.png" />
